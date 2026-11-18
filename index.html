@@ -4,320 +4,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ethan Issac | Portafolio</title>
-
+    <title>Ethan | Portafolio de Desarrollo</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
 
-    <!-- MENU PRINCIPAL -->
+    <!-- MENU -->
     <header class="header">
-        <a href="#inicio" class="logo">ETHAN<span>.DEV</span></a>
+        <nav class="navbar">
+            <a href="#inicio" class="logo">ETHAN.DEV</a>
 
-        <nav class="menu">
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#estudios">Estudios</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#tecnologias">Tecnologías</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+                ☰
+            </button>
         </nav>
     </header>
 
-    <!-- PRESENTACION -->
-    <main>
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+        <div class="inicio-contenido">
+            <p class="subtitulo">BIENVENIDO A MI PORTAFOLIO</p>
 
-        <section id="inicio" class="inicio">
+            <h1>
+                Hola, soy <span>Ethan Issac</span>
+            </h1>
 
-            <div class="inicio-contenido">
+            <h2>Desarrollador de Software</h2>
 
-                <p class="etiqueta">
-                    HOLA, BIENVENIDO A MI PORTAFOLIO
-                </p>
+            <p class="descripcion">
+                Soy estudiante de Ingeniería en Gestión y Desarrollo
+                de Software. Me interesa el desarrollo web, la
+                programación y la creación de soluciones tecnológicas.
+            </p>
 
-                <h1>
-                    Soy <span>Ethan Issac</span>
-                    <br>
-                    Desarrollador de Software
-                </h1>
+            <a href="#proyectos" class="boton">
+                Ver mis proyectos
+            </a>
+        </div>
 
-                <p class="descripcion">
-                    Soy estudiante de Ingeniería en Gestión y Desarrollo
-                    de Software. Me interesa el desarrollo web,
-                    la programación y la creación de soluciones
-                    tecnológicas.
-                </p>
-
-                <div class="botones">
-                    <a href="#proyectos" class="btn-principal">
-                        Conocer mis proyectos
-                    </a>
-
-                    <a href="#sobre-mi" class="btn-secundario">
-                        Sobre mí
-                    </a>
+        <div class="inicio-imagen">
+            <div class="foto-marco">
+                <div class="foto-placeholder">
+                    MI FOTO
                 </div>
-
             </div>
+        </div>
+    </section>
 
-            <!-- ELEMENTO VISUAL -->
-            <div class="inicio-visual">
+    <!-- SOBRE MI -->
+    <section class="seccion" id="sobre-mi">
+        <h2 class="titulo-seccion">Sobre <span>mí</span></h2>
 
-                <div class="circulo circulo-1"></div>
-                <div class="circulo circulo-2"></div>
-
-                <div class="tarjeta-perfil">
-                    <div class="perfil-icono">ED</div>
-
-                    <h2>ETHAN.DEV</h2>
-
-                    <p>Software Developer</p>
-
-                    <div class="estado">
-                        <span></span>
-                        En constante aprendizaje
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- SOBRE MI -->
-        <section id="sobre-mi" class="seccion">
-
-            <div class="titulo-seccion">
-                <p>CONÓCEME</p>
-                <h2>Sobre <span>mí</span></h2>
-            </div>
-
-            <div class="sobre-contenido">
-
-                <div class="sobre-texto">
-                    <h3>Hola, soy Ethan</h3>
-
-                    <p>
-                        Soy estudiante de Ingeniería en Gestión y
-                        Desarrollo de Software, apasionado por la
-                        tecnología y el desarrollo de aplicaciones.
-                    </p>
-
-                    <p>
-                        Me gusta aprender nuevas herramientas,
-                        desarrollar proyectos y buscar soluciones
-                        mediante la programación.
-                    </p>
-
-                    <p>
-                        Mi objetivo es seguir desarrollando mis
-                        conocimientos y mejorar mis habilidades
-                        como desarrollador de software.
-                    </p>
-                </div>
-
-                <div class="sobre-dato">
-                    <div class="dato">
-                        <h3>01</h3>
-                        <p>Aprendizaje continuo</p>
-                    </div>
-
-                    <div class="dato">
-                        <h3>02</h3>
-                        <p>Desarrollo web</p>
-                    </div>
-
-                    <div class="dato">
-                        <h3>03</h3>
-                        <p>Proyectos tecnológicos</p>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- ESTUDIOS -->
-        <section id="estudios" class="seccion seccion-alterna">
-
-            <div class="titulo-seccion">
-                <p>MI FORMACIÓN</p>
-                <h2>Mis <span>estudios</span></h2>
-            </div>
-
-            <div class="tarjeta-estudio">
-
-                <div class="estudio-icono">🎓</div>
-
-                <div>
-                    <h3>Ingeniería en Gestión y Desarrollo de Software</h3>
-
-                    <p>
-                        Formación académica enfocada en programación,
-                        desarrollo de software, bases de datos y
-                        tecnologías de la información.
-                    </p>
-
-                    <span>Estudiante</span>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- HABILIDADES -->
-        <section id="habilidades" class="seccion">
-
-            <div class="titulo-seccion">
-                <p>LO QUE UTILIZO</p>
-                <h2>Mis <span>habilidades</span></h2>
-            </div>
-
-            <div class="habilidades-grid">
-
-                <div class="habilidad">
-                    <div class="habilidad-icono">HTML</div>
-                    <h3>HTML</h3>
-                    <p>Estructura de páginas web.</p>
-                </div>
-
-                <div class="habilidad">
-                    <div class="habilidad-icono">CSS</div>
-                    <h3>CSS</h3>
-                    <p>Diseño y estilos web.</p>
-                </div>
-
-                <div class="habilidad">
-                    <div class="habilidad-icono">JS</div>
-                    <h3>JavaScript</h3>
-                    <p>Interactividad y programación.</p>
-                </div>
-
-                <div class="habilidad">
-                    <div class="habilidad-icono">PHP</div>
-                    <h3>PHP</h3>
-                    <p>Desarrollo del lado del servidor.</p>
-                </div>
-
-                <div class="habilidad">
-                    <div class="habilidad-icono">SQL</div>
-                    <h3>MySQL</h3>
-                    <p>Administración de bases de datos.</p>
-                </div>
-
-                <div class="habilidad">
-                    <div class="habilidad-icono">GH</div>
-                    <h3>GitHub</h3>
-                    <p>Control de versiones y repositorios.</p>
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- PROYECTOS -->
-        <section id="proyectos" class="seccion seccion-alterna">
-
-            <div class="titulo-seccion">
-                <p>MI TRABAJO</p>
-                <h2>Mis <span>proyectos</span></h2>
-            </div>
-
-            <div class="proyectos-grid">
-
-                <article class="proyecto">
-                    <div class="proyecto-numero">01</div>
-
-                    <h3>Plataforma de servicios</h3>
-
-                    <p>
-                        Sistema web para registrar, consultar y
-                        administrar solicitudes de servicio.
-                    </p>
-
-                    <div class="etiquetas">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                    </div>
-                </article>
-
-                <article class="proyecto">
-                    <div class="proyecto-numero">02</div>
-
-                    <h3>BUGISTORE</h3>
-
-                    <p>
-                        Plataforma web progresiva enfocada en la
-                        consulta y presentación de videojuegos.
-                    </p>
-
-                    <div class="etiquetas">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </article>
-
-                <article class="proyecto">
-                    <div class="proyecto-numero">03</div>
-
-                    <h3>Welcome Gamers</h3>
-
-                    <p>
-                        Proyecto de aplicación web progresiva
-                        orientado al entorno de videojuegos.
-                    </p>
-
-                    <div class="etiquetas">
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
-                </article>
-
-            </div>
-
-        </section>
-
-        <!-- CONTACTO -->
-        <section id="contacto" class="seccion">
-
-            <div class="titulo-seccion">
-                <p>HABLEMOS</p>
-                <h2>Contacto</h2>
-            </div>
-
-            <div class="contacto-contenido">
-
-                <h3>¿Tienes algún proyecto en mente?</h3>
+        <div class="sobre-mi">
+            <div class="sobre-texto">
+                <h3>¿Quién soy?</h3>
 
                 <p>
-                    Puedes conocer más sobre mi trabajo y mis
-                    proyectos a través de mi perfil de GitHub.
+                    Mi nombre es Ethan Issac Medina Estrada.
+                    Actualmente estudio Ingeniería en Gestión y
+                    Desarrollo de Software en la Universidad
+                    Tecnológica Fidel Velázquez.
                 </p>
 
-                <a
-                    href="https://github.com/estradaethangg-bot"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="btn-principal">
-                    Visitar mi GitHub
-                </a>
-
+                <p>
+                    Me gusta aprender nuevas tecnologías, desarrollar
+                    aplicaciones y crear proyectos que ayuden a
+                    resolver problemas mediante la programación.
+                </p>
             </div>
 
-        </section>
+            <div class="sobre-datos">
+                <div class="dato">
+                    <h3>HTML</h3>
+                    <p>Estructura web</p>
+                </div>
 
-    </main>
+                <div class="dato">
+                    <h3>CSS</h3>
+                    <p>Diseño web</p>
+                </div>
 
-    <!-- PIE DE PAGINA -->
-    <footer>
+                <div class="dato">
+                    <h3>JS</h3>
+                    <p>Programación</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="seccion tecnologias" id="tecnologias">
+        <h2 class="titulo-seccion">Mis <span>tecnologías</span></h2>
+
+        <div class="tecnologias-grid">
+            <div class="tech-card">
+                <h3>HTML5</h3>
+                <p>Estructura de páginas web.</p>
+            </div>
+
+            <div class="tech-card">
+                <h3>CSS3</h3>
+                <p>Diseño y estilos visuales.</p>
+            </div>
+
+            <div class="tech-card">
+                <h3>JavaScript</h3>
+                <p>Interactividad y funcionalidades.</p>
+            </div>
+
+            <div class="tech-card">
+                <h3>PHP</h3>
+                <p>Desarrollo del lado del servidor.</p>
+            </div>
+
+            <div class="tech-card">
+                <h3>MySQL</h3>
+                <p>Gestión de bases de datos.</p>
+            </div>
+
+            <div class="tech-card">
+                <h3>GitHub</h3>
+                <p>Control de versiones y proyectos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section class="seccion" id="proyectos">
+        <h2 class="titulo-seccion">Mis <span>proyectos</span></h2>
+
+        <div class="proyectos-grid">
+
+            <div class="proyecto-card">
+                <div class="proyecto-contenido">
+                    <h3>BUGISTORE</h3>
+                    <p>
+                        Plataforma web progresiva para consultar
+                        y comprar videojuegos.
+                    </p>
+                    <span>HTML · CSS · JavaScript</span>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="proyecto-contenido">
+                    <h3>Tickets de Servicio</h3>
+                    <p>
+                        Sistema para registrar, consultar y
+                        administrar reportes de servicio técnico.
+                    </p>
+                    <span>HTML · CSS · PHP · MySQL</span>
+                </div>
+            </div>
+
+            <div class="proyecto-card">
+                <div class="proyecto-contenido">
+                    <h3>Welcome Gamers</h3>
+                    <p>
+                        Aplicación web progresiva enfocada
+                        en el mundo de los videojuegos.
+                    </p>
+                    <span>HTML · CSS · JavaScript</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="seccion contacto" id="contacto">
+        <h2 class="titulo-seccion">Contácta<span>me</span></h2>
+
+        <p>
+            ¿Te interesa conocer más sobre mis proyectos?
+            Puedes ponerte en contacto conmigo.
+        </p>
+
+        <a href="mailto:tu_correo@ejemplo.com" class="boton">
+            Enviar correo
+        </a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
         <p>© 2026 ETHAN.DEV | Portafolio personal</p>
-        <p>Desarrollado con HTML, CSS y JavaScript</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
