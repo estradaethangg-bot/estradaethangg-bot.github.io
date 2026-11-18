@@ -167,3 +167,61 @@ footer {
         padding: 55px 6%;
     }
 }
+
+
+/* MEJORAS DEL MENÚ DE NAVEGACIÓN */
+
+header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+    margin: 0;
+    font-size: 15px;
+}
+
+/* MEJORAR PRESENTACIÓN */
+
+.inicio {
+    min-height: 90vh;
+    padding: 60px 20px;
+}
+
+/* EVITAR DESBORDAMIENTO EN CELULARES */
+
+@media (max-width: 650px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
