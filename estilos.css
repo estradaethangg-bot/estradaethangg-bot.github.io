@@ -1,5 +1,11 @@
 
-/* CONFIGURACIÓN GENERAL */
+/* =====================================
+   PORTAFOLIO ETHAN.DEV
+   Diseño oscuro, moderno y tecnológico
+===================================== */
+
+/* CONFIGURACION GENERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,220 +14,372 @@
 }
 
 body {
-    background-color: #080b14;
+    background-color: #080c16;
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-/* COLORES PRINCIPALES */
-:root {
-    --fondo: #080b14;
-    --tarjetas: #111827;
-    --azul: #00bfff;
-    --morado: #8b5cf6;
-    --texto: #ffffff;
-    --gris: #a0aec0;
-}
-
-/* ENCABEZADO */
-header {
-    width: 100%;
-    padding: 22px 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0c1220;
-    border-bottom: 1px solid #1e293b;
-}
-
-.logo {
-    font-size: 25px;
-    font-weight: bold;
-    color: var(--azul);
-}
-
-nav a {
-    color: var(--texto);
-    text-decoration: none;
-    margin-left: 25px;
-    transition: 0.3s;
-}
-
-nav a:hover {
-    color: var(--azul);
-}
-
-/* PRESENTACIÓN */
-.inicio {
-    min-height: 85vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 40px 20px;
-}
-
-.inicio h1 {
-    font-size: 48px;
-    margin-bottom: 15px;
-}
-
-.inicio h1 span {
-    color: var(--azul);
-}
-
-.inicio p {
-    color: var(--gris);
-    font-size: 19px;
-    max-width: 650px;
-    line-height: 1.7;
-}
-
-/* BOTONES */
-.boton {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 13px 28px;
-    background: linear-gradient(90deg, #007cf0, #8b5cf6);
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: 0.3s;
-}
-
-.boton:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 0 20px #007cf080;
-}
-
-/* SECCIONES */
-section {
-    padding: 75px 8%;
-}
-
-.titulo {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
-    color: var(--azul);
-}
-
-/* TARJETAS */
-.contenedor {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 25px;
-}
-
-.tarjeta {
-    background-color: var(--tarjetas);
-    padding: 25px;
-    border: 1px solid #253149;
-    border-radius: 12px;
-    transition: 0.3s;
-}
-
-.tarjeta:hover {
-    transform: translateY(-7px);
-    border-color: var(--azul);
-    box-shadow: 0 0 18px #00bfff30;
-}
-
-.tarjeta h3 {
-    color: var(--azul);
-    margin-bottom: 15px;
-}
-
-.tarjeta p {
-    color: var(--gris);
+    font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
 }
 
-/* PIE DE PÁGINA */
-footer {
-    text-align: center;
-    padding: 25px;
-    background-color: #0c1220;
-    color: var(--gris);
-    border-top: 1px solid #1e293b;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-/* ADAPTACIÓN A CELULARES */
-@media (max-width: 650px) {
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* =====================================
+   ENCABEZADO Y MENU
+===================================== */
+
+header {
+    width: 100%;
+    min-height: 85px;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0d1424;
+    border-bottom: 1px solid #1e293b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    color: #00c8ff;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li a {
+    color: #dbe4f0;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+header ul li a:hover {
+    color: #00c8ff;
+}
+
+/* =====================================
+   SECCIONES GENERALES
+===================================== */
+
+section {
+    padding: 100px 10%;
+}
+
+section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 35px;
+    color: #ffffff;
+}
+
+section h2 span {
+    color: #00c8ff;
+}
+
+/* =====================================
+   INICIO / PRESENTACION
+===================================== */
+
+#inicio {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background:
+        radial-gradient(
+            circle at center,
+            #122443 0%,
+            #080c16 65%
+        );
+}
+
+#inicio p:first-child {
+    color: #a5b4fc;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#inicio h2 {
+    font-size: clamp(35px, 6vw, 60px);
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+#inicio h2 span {
+    color: #00c8ff;
+}
+
+#inicio h3 {
+    font-size: 27px;
+    color: #dbeafe;
+    margin-bottom: 15px;
+}
+
+#inicio p {
+    color: #a9b8cc;
+    font-size: 19px;
+    max-width: 750px;
+    margin: 0 auto 25px;
+}
+
+/* =====================================
+   BOTONES
+===================================== */
+
+button,
+.btn,
+#inicio a {
+    display: inline-block;
+    padding: 14px 30px;
+    background: linear-gradient(90deg, #087cf0, #8b45ed);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.btn:hover,
+#inicio a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 25px #087cf080;
+}
+
+/* =====================================
+   SOBRE MI
+===================================== */
+
+#sobre-mi {
+    background-color: #0d1424;
+}
+
+#sobre-mi p {
+    color: #a9b8cc;
+    font-size: 18px;
+    max-width: 850px;
+    margin: auto;
+    text-align: center;
+}
+
+/* =====================================
+   TECNOLOGIAS
+===================================== */
+
+#tecnologias {
+    background-color: #080c16;
+}
+
+#tecnologias .contenedor,
+#tecnologias .tecnologias-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#tecnologias .card,
+#tecnologias .tecnologia {
+    background-color: #111c30;
+    border: 1px solid #243653;
+    border-radius: 15px;
+    padding: 25px;
+    min-width: 140px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+#tecnologias .card:hover,
+#tecnologias .tecnologia:hover {
+    transform: translateY(-8px);
+    border-color: #00c8ff;
+    box-shadow: 0 0 20px #00c8ff30;
+}
+
+/* =====================================
+   PROYECTOS
+===================================== */
+
+#proyectos {
+    background-color: #0d1424;
+}
+
+#proyectos .contenedor,
+#proyectos .proyectos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+#proyectos .card,
+#proyectos .proyecto {
+    background-color: #111c30;
+    border: 1px solid #263750;
+    border-radius: 15px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+#proyectos .card:hover,
+#proyectos .proyecto:hover {
+    transform: translateY(-8px);
+    border-color: #00c8ff;
+    box-shadow: 0 0 25px #00c8ff25;
+}
+
+#proyectos h3 {
+    color: #00c8ff;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+#proyectos p {
+    color: #a9b8cc;
+    margin-bottom: 15px;
+}
+
+/* =====================================
+   CONTACTO
+===================================== */
+
+#contacto {
+    background-color: #080c16;
+    text-align: center;
+}
+
+#contacto p {
+    color: #a9b8cc;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#contacto a {
+    color: #00c8ff;
+    transition: 0.3s;
+}
+
+#contacto a:hover {
+    color: #ffffff;
+}
+
+/* =====================================
+   FOTOGRAFIA
+===================================== */
+
+.foto-perfil {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00c8ff;
+    margin: 25px auto;
+    box-shadow: 0 0 30px #00c8ff40;
+}
+
+/* =====================================
+   PIE DE PAGINA
+===================================== */
+
+footer {
+    background-color: #0d1424;
+    padding: 25px;
+    text-align: center;
+    border-top: 1px solid #263750;
+    color: #8b9bb4;
+}
+
+/* =====================================
+   ANIMACIONES
+===================================== */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#inicio h2,
+#inicio h3,
+#inicio p {
+    animation: aparecer 1s ease;
+}
+
+/* =====================================
+   DISEÑO RESPONSIVO
+===================================== */
+
+@media (max-width: 768px) {
+
     header {
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
+        padding: 20px 5%;
     }
 
-    nav a {
-        margin: 8px;
-        display: inline-block;
+    header ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
     }
 
-    .inicio h1 {
-        font-size: 34px;
+    header ul li a {
+        font-size: 14px;
     }
 
     section {
-        padding: 55px 6%;
-    }
-}
-
-
-/* MEJORAS DEL MENÚ DE NAVEGACIÓN */
-
-header {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-nav ul {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    list-style: none;
-}
-
-nav li {
-    list-style: none;
-}
-
-nav a {
-    display: inline-block;
-    margin: 0;
-    font-size: 15px;
-}
-
-/* MEJORAR PRESENTACIÓN */
-
-.inicio {
-    min-height: 90vh;
-    padding: 60px 20px;
-}
-
-/* EVITAR DESBORDAMIENTO EN CELULARES */
-
-@media (max-width: 650px) {
-    header {
-        flex-direction: column;
+        padding: 70px 6%;
     }
 
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 12px;
+    section h2 {
+        font-size: 29px;
     }
 
-    nav ul {
-        flex-wrap: wrap;
-        justify-content: center;
+    #inicio {
+        min-height: 75vh;
+    }
+
+    #inicio h2 {
+        font-size: 38px;
+    }
+
+    #inicio h3 {
+        font-size: 22px;
+    }
+
+    #inicio p {
+        font-size: 16px;
+    }
+
+    #proyectos .contenedor,
+    #proyectos .proyectos-container {
+        grid-template-columns: 1fr;
     }
 }
