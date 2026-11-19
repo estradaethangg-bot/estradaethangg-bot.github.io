@@ -30,44 +30,36 @@ document.querySelectorAll("[data-galeria]").forEach(function(galeria) {
     let siguiente = galeria.querySelector(".siguiente");
     let contador = galeria.querySelector(".galeria-contador");
 
-    // Obtener los nombres de las imágenes
-    let imagenes = galeria.dataset.imagenes
-        ? galeria.dataset.imagenes.split(",")
-        : [];
+    let imagenes = [];
+
+    if (galeria.dataset.imagenes) {
+        imagenes = galeria.dataset.imagenes.split(",");
+    }
 
     let posicion = 0;
 
     function mostrarImagen() {
 
-        // Si no hay imágenes, ocultar las flechas
-        if (imagenes.length === 0 || !imagen) {
-
+        if (!imagen || imagenes.length === 0) {
             contador.textContent = "0 / 0";
-
             anterior.style.display = "none";
             siguiente.style.display = "none";
-
             return;
         }
 
-        // Mostrar la imagen seleccionada
         imagen.src = imagenes[posicion];
 
-        // Actualizar contador
         contador.textContent =
             (posicion + 1) + " / " + imagenes.length;
 
-        // Mostrar flechas solamente si hay varias imágenes
-        anterior.style.display =
-            imagenes.length > 1 ? "flex" : "none";
-
-        siguiente.style.display =
-            imagenes.length > 1 ? "flex" : "none";
+        anterior.style.display = "flex";
+        siguiente.style.display = "flex";
     }
 
-
-    // BOTON ANTERIOR
+    // IMAGEN ANTERIOR
     anterior.addEventListener("click", function() {
+
+        if (imagenes.length <= 1) return;
 
         posicion--;
 
@@ -78,9 +70,10 @@ document.querySelectorAll("[data-galeria]").forEach(function(galeria) {
         mostrarImagen();
     });
 
-
-    // BOTON SIGUIENTE
+    // IMAGEN SIGUIENTE
     siguiente.addEventListener("click", function() {
+
+        if (imagenes.length <= 1) return;
 
         posicion++;
 
@@ -91,8 +84,6 @@ document.querySelectorAll("[data-galeria]").forEach(function(galeria) {
         mostrarImagen();
     });
 
-
-    // Mostrar primera imagen al cargar la página
     mostrarImagen();
 
 });
